@@ -29,6 +29,11 @@ npm install
 yarn install
 ```
 
+## Local Variables
+```
+VITE_BASE_URL = https://reqres.in/api
+```
+
 ## Running the Project
 
 To start the development server:
