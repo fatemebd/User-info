@@ -1,50 +1,77 @@
-# React + TypeScript + Vite
+Here's a simple README template that provides instructions for running your project with Vite, React, Ant Design, TypeScript, and Tailwind CSS. This README includes sections for project setup, dependencies, and basic usage.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+# User Details Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A simple React project that displays user details using Vite, Ant Design, TypeScript, and Tailwind CSS.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Prerequisites
 
-- Configure the top-level `parserOptions` property like this:
+Make sure you have these installed:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- [Node.js](https://nodejs.org/) (v14 or above)
+- [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
+
+## Installation
+
+Clone the repository and install dependencies:
+
+```bash
+# Clone the repository
+git clone https://github.com/fatemebd/User-info.git
+
+# Navigate into the project directory
+cd User-info
+
+# Install dependencies
+npm install
+# or, if you prefer Yarn
+yarn install
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Running the Project
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+To start the development server:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+# For npm
+npm run dev
+
+# For Yarn
+yarn dev
+```
+
+This will start the project in development mode, and you can access it at `http://localhost:5173/usersInfo`.
+
+## Building for Production
+
+To create an optimized production build:
+
+```bash
+# For npm
+npm run build
+
+# For Yarn
+yarn build
+```
+
+The production build will be located in the `dist` folder.
+
+## Project Structure
+
+```plaintext
+├── src
+│   ├── components       # Reusable components (e.g., user details card)
+│   ├── pages            # Pages (e.g., users list page)
+│   ├── utils            # Utility functions
+│   └── types            # Common types
+│   ├── App.tsx          # Main App component
+│   └── main.tsx         # Application entry point
+
+├── public               # Static assets
+├── tailwind.config.js   # Tailwind CSS configuration
+├── tsconfig.json        # TypeScript configuration
+└── vite.config.ts       # Vite configuration
 ```
