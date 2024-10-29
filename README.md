@@ -1,6 +1,4 @@
-Here's a simple README template that provides instructions for running your project with Vite, React, Ant Design, TypeScript, and Tailwind CSS. This README includes sections for project setup, dependencies, and basic usage.
 
----
 
 # User Details Project
 
