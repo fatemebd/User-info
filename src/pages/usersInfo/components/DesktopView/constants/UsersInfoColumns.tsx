@@ -1,10 +1,6 @@
 import { Avatar, Typography } from "antd";
 import { User } from "../../../api/api.types";
 
-interface UsersInfoColumnsArgs {
-  setModalUser:()=>void;
-}
-
 export const usersInfoColumns = () => {
   return [
     {

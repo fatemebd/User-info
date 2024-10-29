@@ -3,7 +3,6 @@ import { usersInfoColumns } from "./constants/UsersInfoColumns";
 import { User } from "../../api/api.types";
 import { useState } from "react";
 import UserInfoCard from "../../../../components/UserInfo/UserInfo";
-import { useGetUsersInfo } from "../../api";
 
 interface DesktopListProps {
   setCurrentPage: (arg: number) => void;

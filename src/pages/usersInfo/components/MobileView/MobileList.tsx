@@ -1,7 +1,6 @@
 import { Col, Pagination, Row, Spin } from "antd";
 import UserInfoCard from "../../../../components/UserInfo/UserInfo";
 import { User } from "../../api/api.types";
-import { twMerge } from "tailwind-merge";
 
 interface UsersInfoProps {
   setCurrentPage: (arg: number) => void;

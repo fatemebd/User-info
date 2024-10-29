@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import UsersInfo from "./pages/usersInfo";
-import { ConfigProvider, theme as antdTheme } from "antd";
+import { ConfigProvider } from "antd";
 
 function App() {
   return (
