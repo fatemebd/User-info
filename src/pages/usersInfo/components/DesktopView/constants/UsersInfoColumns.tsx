@@ -1,6 +1,8 @@
 import { Avatar, Typography } from "antd";
 import { User } from "../../../api/api.types";
 
+
+//Here is the columns of desktop table
 export const usersInfoColumns = () => {
   return [
     {

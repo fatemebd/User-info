@@ -2,6 +2,8 @@ import { Avatar, Card, Typography } from "antd";
 import { User } from "../../pages/usersInfo/api/api.types";
 import { twMerge } from "tailwind-merge";
 
+//This is the user info card usinf in mobile view and table modal
+
 interface UserInfoCardProps {
   user: User;
   isLoading: boolean;

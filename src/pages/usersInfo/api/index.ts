@@ -29,7 +29,7 @@ export const useGetUsersInfo = ({
   per_page: number;
 }) => {
   return useQuery({
-    queryKey: [USER_INFO,page,per_page],
+    queryKey: [USER_INFO,page,per_page], //the api will be refetch when ant of these changes
     queryFn: () => getUsersInfo({ page, per_page }),
   });
 };

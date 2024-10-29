@@ -35,6 +35,7 @@ const DesktopList = ({
 
   return (
     <div>
+      {/* This modal will be shown when userd clicks on each row */}
       <Modal
         open={!!modalUser}
         title={`${modalUser?.first_name}'s details`}

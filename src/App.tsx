@@ -15,7 +15,7 @@ function App() {
         }}
       >
         <Routes>
-          <Route path="/usersInfo" element={<UsersInfo />} />
+          <Route path="/" element={<UsersInfo />} />
         </Routes>
       </ConfigProvider>
     </div>

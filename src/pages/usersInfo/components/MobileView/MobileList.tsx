@@ -24,6 +24,7 @@ const MobileList = ({
     setCurrentPage(page);
     setPageSize(pageSize);
   };
+  //This spinner will show to user while the data is fetching
   return isLoading ? (
     <Spin />
   ) : (
